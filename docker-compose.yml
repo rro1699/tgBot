@@ -1,10 +1,30 @@
-version: '3.1'
+version: '3.8'
 
 services:
+  sjb-db:
+    image: mysql
+    restart: always
+    container_name: dev-sjb-db
+    environment:
+      MYSQL_DATABASE: "dev_sjb_db"
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+        - "3307:3306"
+    volumes:
+      - db:/var/lib/mysql
   sjb:
+    depends_on:
+      - sjb-db
     build:
       context: .
     environment:
       - BOT_NAME=${BOT_NAME}
       - BOT_TOKEN=${BOT_TOKEN}
+    ports:
+      - "6868:8080"
     restart: always
+    stdin_open: true
+    tty: true
+
+volumes:
+  db:
