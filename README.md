@@ -20,9 +20,9 @@ It is assumed that everyone will be able to add a course of interest to him, whi
 - Adding CI process :white_check_mark:<br>
 - Designing and building a MySQL database :white_check_mark:<br>
 - Added telegram bot to project :white_check_mark:<br>
-- Deployment :white_check_mark:<br> 
-- Adding Flyway to app :negative_squared_cross_mark:<br> 
-- Adding bot to app :negative_squared_cross_mark:<br>
+- Deployment :white_check_mark:<br>
+- Added mySQL and flyway to project :white_check_mark:<br>
+- Added DAO layer :white_check_mark:<br> 
 - Adding logging :negative_squared_cross_mark:<br>
 - ...
 
