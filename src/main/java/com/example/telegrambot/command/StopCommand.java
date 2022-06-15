@@ -10,7 +10,7 @@ public class StopCommand implements Command{
         this.sendBotMessageService = sendBotMessageService;
     }
 
-    public static final String STOP_MESSAGE="Все текущие курсы, изучаемые вами, удалены. Всего хорошего";
+    public static final String STOP_MESSAGE="Всего хорошего";
     @Override
     public void execute(Update update) {
         sendBotMessageService.sendMassege(update.getMessage().getChatId().toString(),STOP_MESSAGE);
