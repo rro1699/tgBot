@@ -4,12 +4,15 @@ It is assumed that everyone will be able to add a course of interest to him, whi
 - Title
 - Subtopics
 - Controlling questions for each subtopic
+
 # Technology stack
 - Spring boot
 - Java 11
 - MySQL 
 - Flyway
 - Slf4j
+- Docker
+
 # Functional requirements
 - Creating cource
 - Search and selection course 
